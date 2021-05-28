@@ -1,0 +1,19 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+   
+  font-family: 'Baloo Tamma 2', cursive;
+  line-height: 1.8;
+
+  display: flex;
+}
+
+
+

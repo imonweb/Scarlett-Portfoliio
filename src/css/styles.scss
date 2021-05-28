@@ -1,11 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import './partials/_utilities';
+@import './partials/_base';
+@import './partials/_nav';
+@import './partials/_main';
+@import './partials/_hero';
+@import './partials/_responsive';
 
-$primary-color: salmon;
+ 
 
-body {
-  background-color: $primary-color;
-}
 

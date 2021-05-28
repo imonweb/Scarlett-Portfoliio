@@ -18,7 +18,23 @@ module.exports = {
       {
         test: /\.(sc|c)ss$/i,
         use: ["style-loader","css-loader","sass-loader"],
-      }
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: 'file-loader?name=images/[name].[ext]',
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      },
     ]
   }
 }
