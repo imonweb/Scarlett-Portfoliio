@@ -1,0 +1,43 @@
+ 
+/* ====== Contact ====== */
+
+section#contact {
+  height: 100vh;
+  background-image: url('../img/full-bg-03.jpg') ;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.contact__form {
+  flex-basis: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tertiary-color-m);
+}
+
+.contact__form input,
+.contact__form textarea {
+  color: #fff;
+  font-family: "Indiee Flower", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  padding: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: var(--secondary-color) solid 0.1rem;
+
+}
+
+.contact__form textarea {
+  height: 30vh;
+}
+
+input[type=submit] {
+  border: none;
+  cursor: pointer;
+}
+
+ 
