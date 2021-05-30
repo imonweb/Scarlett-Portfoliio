@@ -117,8 +117,30 @@
   }
 
   .services--para {
-    font-size: calc(08rem + 1.5vw);
+    font-size: calc(0.8rem + 1.5vw);
   }
+
+  /*  Skills */
+  .skills__design--title, 
+  .skills__coding--title {
+    font-size: calc(1.2rem + 2vw);
+  }
+
+  .skills__design h4 ,
+  .skills__coding h4 {
+    font-size: calc(0.8rem + 1.5vw);
+  }
+
+  /*  Testimonials */
+  .testimonials__card--content__title {
+    font-size: calc(1.2rem + 2vw);
+  }
+
+  .testimonials__card--content__para {
+    font-size: calc(0.8rem + 1.5vw);
+  }
+
+
 
 
 } /*  @media screen and (max-width: 610px) end here */
@@ -133,3 +155,29 @@
 }
 
  
+@media screen and (min-width: 1510px){
+  body {
+    width: 1510px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  /*  Testimonials */
+  .testimonials__card--content {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    // transform: scaleY(0);
+    transform-origin: bottom;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .testimonials__card:hover .testimonials__card--content,
+  .testimonials__card:active .testimonials__card--content {
+    transform-origin: top;
+  }
+}
